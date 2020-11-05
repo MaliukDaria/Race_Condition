@@ -1,7 +1,7 @@
 import org.apache.log4j.Logger;
 
-public class CountThread extends Thread {
-    private static final Logger logger = Logger.getLogger(CountThread.class);
+public class CountRunnable implements Runnable {
+    private static final Logger logger = Logger.getLogger(CountRunnable.class);
 
     @Override
     public void run() {
